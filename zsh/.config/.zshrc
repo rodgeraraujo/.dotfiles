@@ -55,7 +55,5 @@ export EDITOR="nvim"
 export TERMINAL="terminal"
 export BROWSER="chrome"
 
-# export ZSH=$HOME/.oh-my-zsh
-
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
