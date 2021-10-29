@@ -1,0 +1,23 @@
+#!/bin/sh
+# HISTFILE="$XDG_DATA_HOME"/zsh/history
+HISTSIZE=1000000
+SAVEHIST=1000000
+export PATH="$HOME/.local/bin":$PATH
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/share/go/bin:$PATH
+export PATH="/opt/homebrew/bin":$PATH
+export GOPATH=$HOME/.local/share/go
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  
+# export SDKMAN_DIR=$HOME"/.sdkman"
+# [[ -s =$HOME/.sdkman/bin/sdkman-init.sh ]] && source $HOME/.sdkman/bin/sdkman-init.sh
+
+# export SDKMAN_DIR="/Users/rodger/.sdkman"
+# [[ -s "/Users/rodger/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/rodger/.sdkman/bin/sdkman-init.sh"
+
+# eval "`pip completion --zsh`"
