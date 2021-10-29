@@ -1,5 +1,6 @@
-#!/bin/sh
-if [Darwin != $(uname -s)]; then
+#!/bin/bash
+
+if ['Darwin' != $(uname -s)]; then
   echo "This script is for Mac OS X only"
   exit 1
 fi
