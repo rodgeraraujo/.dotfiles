@@ -66,7 +66,6 @@ alias m="git checkout master"
 alias s="git checkout stable"
 alias gs="git status -sb"
 
-
 case "$(uname -s)" in
 
 Darwin)
