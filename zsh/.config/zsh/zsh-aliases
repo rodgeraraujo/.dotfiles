@@ -64,6 +64,8 @@ alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/
 
 alias m="git checkout master"
 alias s="git checkout stable"
+alias gs="git status -sb"
+
 
 case "$(uname -s)" in
 
