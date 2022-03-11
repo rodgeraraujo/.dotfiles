@@ -21,5 +21,3 @@ export NVM_DIR="$HOME/.nvm"
 # [[ -s "/Users/rodger/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/rodger/.sdkman/bin/sdkman-init.sh"
 
 # eval "`pip completion --zsh`"
-
-export DOTFILES_DIR=$HOME/.dotfiles
