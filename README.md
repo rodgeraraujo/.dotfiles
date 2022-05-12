@@ -19,6 +19,7 @@ stow */ # Everything (the '/' ignores the README)
 ```
 
 ### Install ZSH
+
 ```bash
 stow zsh # only my zsh config
 ```
