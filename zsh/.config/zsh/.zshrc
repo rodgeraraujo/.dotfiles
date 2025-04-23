@@ -9,6 +9,10 @@ setopt interactive_comments
 stty stop undef		# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')
 
+export WORDCHARS='*_-.[]~;!$%^(){}<>'
+autoload -Uz select-word-style
+select-word-style normal
+
 # beeping is annoying
 unsetopt BEEP
 
@@ -60,3 +64,22 @@ export BROWSER="chrome"
 
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/tools/bin:$PATH
+
+alias emulator="$ANDROID_HOME/emulator/emulator"
+
+# bun completions
+[ -s "/Users/rogerioaraujo/.bun/_bun" ] && source "/Users/rogerioaraujo/.bun/_bun"
+
+
+export PATH="$PATH":"$HOME/.pub-cache/bin"export PATH=$PATH:$HOME/.maestro/bin

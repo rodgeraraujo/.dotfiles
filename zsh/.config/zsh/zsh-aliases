@@ -9,7 +9,7 @@ alias nvimrc='nvim ~/.config/nvim/'
 
 # Make Python8 environment from pyenv distro
 alias python='python3'
-alias makevenv="~/.pyenv/versions/3.8.10/bin/python -m venv env"
+alias makevenv="~/.pyenv/versions/3.10.7/bin/python -m venv env"
 alias activatevenv="source env/bin/activate"
 
 # ZSH alias 
@@ -64,12 +64,26 @@ alias pscpu='ps aux | sort -nr -k 3 | head -5'
 
 alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh""
 
-alias m="git checkout master"
+alias m="git checkout main"
 alias s="git checkout stable"
 alias gs="git status -sb"
 
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
+
+alias code="cursor"
+alias gen="../dart-parser/bin/code_gen.o --generate"
+alias gen-watch="../dart-parser/bin/code_gen.o --watch -c seeker -c rest_api -c analytics -c runtime_config"
+alias mobile="cd /Users/rogerioaraujo/workspace/projects/pitaco/front-end/mobile"
+
+g(){
+    mobile
+    gen
+}
+gw(){
+    mobile
+    gen-watch
+}
 
 case "$(uname -s)" in
 
